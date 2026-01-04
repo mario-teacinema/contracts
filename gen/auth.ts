@@ -7,7 +7,6 @@
 /* eslint-disable */
 import { GrpcMethod, GrpcStreamMethod } from "@nestjs/microservices";
 import { Observable } from "rxjs";
-import { Empty } from "./google/protobuf/empty";
 
 export const protobufPackage = "auth.v1";
 
@@ -24,19 +23,15 @@ export const AUTH_V1_PACKAGE_NAME = "auth.v1";
 
 export interface AuthServiceClient {
   sendOtp(request: SendOtpRequest): Observable<SendOtpResponse>;
-
-  ping(request: Empty): Observable<Empty>;
 }
 
 export interface AuthServiceController {
   sendOtp(request: SendOtpRequest): Promise<SendOtpResponse> | Observable<SendOtpResponse> | SendOtpResponse;
-
-  ping(request: Empty): void;
 }
 
 export function AuthServiceControllerMethods() {
   return function (constructor: Function) {
-    const grpcMethods: string[] = ["sendOtp", "ping"];
+    const grpcMethods: string[] = ["sendOtp"];
     for (const method of grpcMethods) {
       const descriptor: any = Reflect.getOwnPropertyDescriptor(constructor.prototype, method);
       GrpcMethod("AuthService", method)(constructor.prototype[method], method, descriptor);
