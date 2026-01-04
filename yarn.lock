@@ -12,6 +12,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mario-teacinema/contracts@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@mario-teacinema/contracts@workspace:."
+  dependencies:
+    "@nestjs/microservices": "npm:^11.1.11"
+    rxjs: "npm:^7.8.2"
+    ts-proto: "npm:^2.10.1"
+  languageName: unknown
+  linkType: soft
+
 "@nestjs/microservices@npm:^11.1.11":
   version: 11.1.11
   resolution: "@nestjs/microservices@npm:11.1.11"
@@ -61,16 +71,6 @@ __metadata:
   checksum: 10c0/b02ffa51d7d58b9a32df7b40973836e16afad131eae7d343e64cb3ca7be57a936bf3d6c9d57a7aa242cf2f545d9a33990b755e93bcac2517761d77773a4a6a30
   languageName: node
   linkType: hard
-
-"contracts@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "contracts@workspace:."
-  dependencies:
-    "@nestjs/microservices": "npm:^11.1.11"
-    rxjs: "npm:^7.8.2"
-    ts-proto: "npm:^2.10.1"
-  languageName: unknown
-  linkType: soft
 
 "detect-libc@npm:^1.0.3":
   version: 1.0.3
