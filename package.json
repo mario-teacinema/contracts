@@ -19,6 +19,7 @@
     "proto:generate": "protoc -I ./proto ./proto/*.proto --ts_proto_out=./gen --ts_proto_opt=nestJs=true,package=omit"
   },
   "devDependencies": {
+    "@types/node": "^25.0.10",
     "ts-proto": "^2.10.1"
   },
   "dependencies": {

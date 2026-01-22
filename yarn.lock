@@ -17,6 +17,7 @@ __metadata:
   resolution: "@mario-teacinema/contracts@workspace:."
   dependencies:
     "@nestjs/microservices": "npm:^11.1.11"
+    "@types/node": "npm:^25.0.10"
     rxjs: "npm:^7.8.2"
     ts-proto: "npm:^2.10.1"
   languageName: unknown
@@ -62,6 +63,15 @@ __metadata:
     nats:
       optional: true
   checksum: 10c0/43a512c3070bb6afb008b02f351e6bd7446085244df0b9822428128623203e3cea4f9cbb8d7e08fc46385b225013de544bf0129479fcc57fbb200eb2ba3ac85f
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^25.0.10":
+  version: 25.0.10
+  resolution: "@types/node@npm:25.0.10"
+  dependencies:
+    undici-types: "npm:~7.16.0"
+  checksum: 10c0/9edc3c812b487c32c76eebac7c87acae1f69515a0bc3f6b545806d513eb9e918c3217bf751dc93da39f60e06bf1b0caa92258ef3a6dd6457124b2e761e54f61f
   languageName: node
   linkType: hard
 
@@ -142,5 +152,12 @@ __metadata:
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~7.16.0":
+  version: 7.16.0
+  resolution: "undici-types@npm:7.16.0"
+  checksum: 10c0/3033e2f2b5c9f1504bdc5934646cb54e37ecaca0f9249c983f7b1fc2e87c6d18399ebb05dc7fd5419e02b2e915f734d872a65da2e3eeed1813951c427d33cc9a
   languageName: node
   linkType: hard
