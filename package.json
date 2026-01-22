@@ -1,8 +1,7 @@
 {
   "name": "@mario-teacinema/contracts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Protobuf definitions and generated TypeScript types",
-  "type": "module",
   "publishConfig": {
     "access": "public"
   },
