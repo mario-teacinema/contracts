@@ -15,7 +15,10 @@
     "type": "git",
     "url": "https://github.com/mario-teacinema/contracts.git"
   },
+  "main": "./dist/index.js",
+  "types": "./dist/inex.d.ts",
   "scripts": {
+    "build": "tsc -p tsconfig.build.json",
     "proto:generate": "protoc -I ./proto ./proto/*.proto --ts_proto_out=./gen --ts_proto_opt=nestJs=true,package=omit"
   },
   "devDependencies": {
