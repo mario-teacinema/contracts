@@ -1,6 +1,6 @@
 {
   "name": "@mario-teacinema/contracts",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Protobuf definitions and generated TypeScript types",
   "type": "commonjs",
   "publishConfig": {
@@ -19,7 +19,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "format": "prettier --write \"lib/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "pack": "npm pack",
     "publish": "npm publish --access public",
     "proto:generate": "protoc -I ./proto ./proto/*.proto --ts_proto_out=./gen --ts_proto_opt=nestJs=true,package=omit"
@@ -30,7 +30,9 @@
     "gen"
   ],
   "devDependencies": {
+    "@mario-teacinema/core": "1.0.3",
     "@types/node": "25.0.10",
+    "prettier": "3.8.0",
     "ts-proto": "2.10.1",
     "typescript": "5.9.3"
   },
