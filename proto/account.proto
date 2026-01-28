@@ -40,6 +40,7 @@ message InitEmailChangeResponse {
 message ConfirmEmailChangeRequest {
   string email = 1;
   string code = 2;
+  string user_id = 3;
 }
 
 message ConfirmEmailChangeResponse {
@@ -58,6 +59,7 @@ message InitPhoneChangeResponse {
 message ConfirmPhoneChangeRequest {
   string phone = 1;
   string code = 2;
+  string user_id = 3;
 }
 
 message ConfirmPhoneChangeResponse {
